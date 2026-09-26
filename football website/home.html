@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <span class="border trans" style ="font-size: 40px"
+    <span class="border trans" style ="font-size: 40px">
     <center>Welcome all to this website</center>
 </span> </br>
 <style>
+   body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .topnav {
+    overflow:hidden;
+    background-color: #333;
+    }
+    .topnav a {
+    float:left;
+    color:#1affa3;
+    text-align:center;
+    text-decoration:none;
+    font-size:30px;
+    padding: 14px 16px;
+    }
+    .topnav a:hover {
+    background-color:#ddd;
+    color:black;
+    }
+    .topnav a.active {
+    background-color:#ffe066;
+    color:black;
+    }
  .pimg3 {
     position: relative;
     opacity: 0.70;
@@ -20,13 +44,13 @@
     background-image:url('image 4.jpg');
     min-height: 400px;
  }
- section{
+ .section{
     text-align: center;
     padding: 50px 80px;
  }
- section-dark {
-    background-color: orange;
-    color:red;
+ .section-dark {
+    background-color: #282e34;
+    color:#ddd;
  }
  .ptext {
     position:absolute;
@@ -38,13 +62,38 @@
     letter-spacing:8px;
     text-transform:uppercase;
  }
- 
-
-
+ .ptext .border {
+   background-color:#111;
+   color:#fff;
+   padding:20px;
+ }
+ .ptext .border .trans {
+   background-color:transparent;
+ }
+ @media(max-width:568px) {
+ .pimg3 {
+  background-attachment:scroll;
+ }
+ }
+ .footer {
+      position:fixed;
+      left:0px;
+      bottom:0px;
+      width:100%;
+      background-color:black;
+      color:white;
+      text-align:center;
+      }
 </style>
-    <head>
+</head>
 <body>
-  <section class="section section-dark" 
+   <div class="topnav">
+      <a class="active" href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="favplayers.html">Favorite Players</a>
+   </div>
+  <section class="section section-dark">
  <h2>Amazing Football Fact</h2> 
  <p>Fact Category DetailMatch DurationA standard match lasts 90 minutes, split into two 45-minute halves.Player
 MovementPlayers run an average of about 9.6 kilometers (6 miles) during a single game.Global ReachThe FIFA World Cup is
@@ -52,9 +101,11 @@ the most watched sports event globally.</p>
 </section>
 <div class="pimg3">
 <div class="ptext">
-<span class="border trans">Neymar[is one of the most successful and decorated footballers of his generation, highlighted by winning the UEFA Champions
-League and an Olympic gold medal]</span>
+<span class="border trans">Neymar[THE UEFA CHAMPION]</span>
 </div>
+</div>
+<div class="footer">
+   <p>@copy all rights and reserved by Taha Khan</p>
 </div>
 </body>
 </html>
