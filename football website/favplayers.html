@@ -38,6 +38,122 @@
       color:white;
       text-align:center;
       }
+      * {
+      box-sizing: border-box;
+      }
+      .body {
+        margin: 0;
+        font-family: Arial,sans-serif;
+        background-color: #f2f2f2;
+        color: #222;
+      }
+      .header {
+        background-color: #0b6623;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+      header h1 {
+        margin: 0;
+      }
+      .player-card {
+       display: flex;
+
+background-color: white;
+
+border-radius: 15px;
+
+overflow: hidden;
+
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.player-card img {
+
+width: 400px;
+
+height: 500px;
+
+object-fit: cover;
+
+}
+
+.player-info {
+
+padding: 40px;
+
+}
+
+.player-info h2 {
+
+font-size: 36px;
+
+color: #0b6623;
+
+margin-top: 0;
+
+}
+
+.player-info h3 {
+
+color: #555;
+
+}
+
+.player-info p {
+
+line-height: 1.6;
+
+}
+
+.details {
+
+background-color: #f1f1f1;
+
+padding: 15px;
+
+margin-top: 25px;
+
+border-left: 5px solid #0b6623;
+
+}
+
+.details p {
+
+margin: 8px 0;
+
+}
+
+@media (max-width: 700px) {
+
+.player-card {
+
+flex-direction: column;
+
+}
+
+.player-card img {
+
+width: 100%;
+
+height: 350px;
+
+}
+
+.player-info {
+
+padding: 25px;
+
+}
+
+.player-info h2 {
+
+font-size: 28px;
+
+}
+
+}
     </style>
 </head>
 <body>
@@ -47,6 +163,27 @@
     <a href="gallery.html">Gallery</a>
     <a class="active" href="favplayers.html">Favorite Players</a>
 </div>
+<header>
+<h1>✨ My Favorite Football Player</h1>
+</header>
+<div class="player-card">
+<img src="Ronaldo.jpg"> alt="Christiano Ronaldo">
+<div class="player-info">
+    <h2>Chritiano Ronaldo</h2>
+    <h3>PT Portugese Foodball Legend</h3>
+    <p>Cristiano Ronaldo is one of the most famous football
+    players in the world. He is known for his incredible 
+    goal-scoring, speed, skills and dedication.</p>
+    <p>He has played for some of the biggest clubs in football
+    and has represented Portugal at the international level.</p>
+    <div class="details">
+        <p><strong>Full Name:</strong>Christiano Ronaldo dos Santos Aveiro</p>
+        <p><strong>Position:</strong>Forward</p>
+        <p><strong>Nationallity:</strong>Portugese</p>
+        <p><strong>Known For:</strong>Goals,Speed and Skills</p>
+        </div>
+        </div>
+        </div>
 <div class="footer">
     <p>@copy all rights and reserved by Taha Khan</p>
 </div>
